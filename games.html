@@ -77,8 +77,8 @@
         .bottom { transform: rotateX(-90deg) translateZ(100px); }
 
         @keyframes spin {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
+            from { transform: rotateX(0deg) rotateY(0deg); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
         }
 
         button {
@@ -120,7 +120,7 @@
         </nav>
     </header>
     <div class="content">
-        <p>Welcome to the Games section! Try out the spinning cube below:</p>
+        <p>Welcome to the Games section! Enjoy the spinning cube below:</p>
         <div class="cube-container" id="cube">
             <div class="cube-face front"></div>
             <div class="cube-face back"></div>

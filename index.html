@@ -16,7 +16,7 @@
             align-items: center;
         }
         header {
-            background-color: #246bcf;
+            background-color: #4CAF50;
             color: white;
             padding: 20px 0;
             width: 100%;
@@ -27,22 +27,6 @@
             margin: 0;
             font-size: 2.5rem;
         }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #FF5722;
-            color: white;
-            border-radius: 5px;
-            margin: 5px;
-            font-size: 1rem;
-            transition: background-color 0.2s;
-        }
-        nav a:hover {
-            background-color: #E64A19;
-        }
         .content {
             max-width: 800px;
             margin: 20px;
@@ -52,15 +36,45 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .content img {
-            max-width: 50%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+        .milk-bottle {
+            position: relative;
+            width: 200px;
+            height: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 50px 50px 20px 20px;
+            overflow: hidden;
+            border: 4px solid #4CAF50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .content p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+        .milk-bottle::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 50px;
+            width: 100px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50px 50px 0 0;
+            border: 4px solid #4CAF50;
+            border-bottom: none;
+        }
+        .milk-images {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .milk-images img {
+            width: 20px;
+            height: 20px;
+            margin: 2px;
+            border-radius: 50%;
         }
         footer {
             margin-top: 20px;
@@ -82,24 +96,32 @@
 <body>
     <header>
         <h1>Welcome to Cademilk</h1>
-        <nav>
-            <a href="games.html">Games</a>
-        </nav>
     </header>
     <div class="content">
-        <img src="images/test.jpeg" alt="Cade and charity efforts">
         <p>
             Cade is a remarkable individual dedicated to making a difference in the community. 
             Through his efforts, he has consistently supported local charities in Clemson, South Carolina, 
             and Maryland. Cade's unwavering commitment to giving back has helped countless people, 
             and his passion for uplifting others is truly inspiring.
         </p>
-        <p>
-            From organizing fundraising events to personally volunteering his time, Cade exemplifies what 
-            it means to be a community leader. He believes in the power of kindness and works tirelessly 
-            to spread positivity and hope wherever he goes. Join us in celebrating Cade’s mission to create 
-            a brighter future for all.
-        </p>
+        <div class="milk-bottle">
+            <div class="milk-images">
+                <!-- Small images of "test.jpeg" -->
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <img src="images/test.jpeg" alt="Milk image">
+                <!-- Add as many images as needed to fill the bottle -->
+            </div>
+        </div>
     </div>
     <footer>
         <p>Learn more about Cade's work or <a href="https://cademilk.com/contact">get in touch</a>.</p>
